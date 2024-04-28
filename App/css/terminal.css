@@ -1,0 +1,236 @@
+html {
+    cursor: url(../imgs/cursor.png), auto;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: terminalFont;
+    src: url(../fonts/Modeseven-L3n5.ttf);
+}
+
+p {
+    text-shadow: 1px 1px 4px rgb(226, 255, 183), 0 0 1em rgb(226, 255, 183);
+    font-family: terminalFont;
+    color: rgb(255, 255, 107);
+    font-size: 2rem !important;
+}
+
+.bezer {
+    width: 90rem;
+    height: 55rem;
+    background-color: rgb(0, 90, 0);
+    background-image: url('../imgs/bezel.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 30em rgba(0, 0, 0, 0.727);
+    overflow: auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container{
+    position: absolute;
+    top: 20%;
+    left: 16.4%;
+    transform: translate(-50%, -50%);
+}
+
+#username, #email, #pwd{
+    font-family: terminalFont;
+    height: 2rem;
+    font-size: 2rem;
+    width: 20rem;
+    color: rgb(200, 255, 0);
+    text-shadow: 0 0 1px rgb(171, 255, 45), 0 0 0.3em rgb(171, 255, 45), 0 0 3px rgb(226, 255, 183);
+}
+
+label{
+    font-family: terminalFont;
+    font-weight: bold;
+    height: 2rem;
+    font-size: 4rem;
+    width: 20rem;
+    color: rgb(200, 255, 0);
+    text-shadow: 0 0 1px rgb(171, 255, 45), 0 0 0.3em rgb(171, 255, 45), 0 0 3px rgb(226, 255, 183);
+    cursor: url(../imgs/cursor.png), auto;
+}
+
+.registerlogin{
+    width: 20rem;
+    height: 16rem;
+    display: block;
+}
+
+/* ---------- REGISTER ---------- */
+
+#RusernameDiv{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#RemailDiv{
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+    transform: translate(-50%, -50%);
+}
+
+#RpwdDiv{
+    position: absolute;
+    top: 23rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#already{
+    position: absolute;
+    top: 23rem;
+    left: 50rem;
+    transform: translate(-50%, -50%);
+}
+
+#Rmain{
+    position: absolute;
+    top: 36rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#Rsubmit{
+    position: absolute;
+    top: 36rem;
+    left: 50rem;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------- LOGIN ---------- */
+
+#LemailDiv{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#LpwdDiv{
+    position: absolute;
+    top: 10rem;
+    left: 50rem;
+    transform: translate(-50%, -50%);
+}
+
+#yet{
+    position: absolute;
+    top: 23rem;
+    left: 50rem;
+    transform: translate(-50%, -50%);
+}
+
+#Lmain{
+    position: absolute;
+    top: 25rem;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+}
+
+#Lsubmit{
+    position: absolute;
+    top: 36rem;
+    left: 33rem;
+    transform: translate(-50%, -50%);
+}
+
+.already{
+    font-size: 92%;
+}
+
+.submitbutton {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 0.2rem rgb(253, 255, 249), 0 0 1em rgb(253, 255, 250);
+    font-family: terminalFont;
+    color: rgb(255, 255, 255);
+    background-color: rgba(171, 255, 45, 0.918);
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 1rem rgb(171, 255, 45);
+    outline: none;
+    border: none;
+    cursor: url(../imgs/pointer.png), default;
+    width: auto;
+    height: auto;
+    padding: 1rem; 
+}
+
+a{
+    color: rgb(87, 172, 252);
+    text-shadow:0 0 1em rgb(5, 77, 220), 0 0 0.4em rgb(0, 255, 255);
+	text-decoration: none;
+    font-size: 2rem;
+    font-family: terminalFont;
+    cursor: url(../imgs/pointer.png), default;
+}
+
+input{
+    background-color: transparent;
+    border: 1px solid ;
+    color: rgb(200, 255, 0);
+    box-shadow: 0 0 1px rgb(171, 255, 45);
+    box-shadow: inset 0 0 3px rgb(171, 255, 45);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+input:focus{
+    outline: none;
+    caret-color: yellow;
+}
+
+::selection{
+    color: rgb(254, 255, 194);
+}
+
+.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -20rem;
+    width: 100%;
+    max-width: 80rem;
+    text-align: center;
+}
+
+.error span {
+    background-color: red;
+    color: white;
+    font-size: 2.2rem;
+    font-family: terminalFont;
+    padding: 0.4rem;
+    text-transform: uppercase;
+}

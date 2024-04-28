@@ -1,0 +1,515 @@
+@font-face {
+    font-family: Cyberjunkies;
+    src: url(../fonts/Cyberjunkies\ Italic.ttf);
+}
+
+html {
+    color: #FFF;
+    font-size: 16px;
+    cursor: url(../imgs/cursor.png), auto;
+    font-family: 'Tilt Neon', sans-serif;
+    width: 100%;
+    background-image: url(../imgs/background-main.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    padding-bottom: 500px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ Header ------------------------------ */
+/* -------------------------------------------------------------------- */
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*50%;*/
+    ;
+    height: 100%;
+    /*margin-left: 34.5rem;*/
+    background: linear-gradient(50deg, transparent 50%, #ffffff 50%, #ffffff 60%, transparent 60%, transparent 63%, #ffffff 63%, #ffffff 70%, transparent 70%, transparent 73%, #ffffff 73%, #ffffff 77%, transparent 77%, transparent 80%, #ffffff 80%, #ffffff 83%, transparent 83%);
+}
+
+.header {
+    height: 2.5rem;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: 100%;
+    z-index: 3;
+    background-image: url(../imgs/black.jpg);
+    white-space: nowrap;
+}
+
+.header-buttons {
+    margin-top: 0.5rem;
+    font-family: SYNNova;
+    color: white;
+    font-size: larger;
+}
+
+a {
+    cursor: url(../imgs/pointer.png), default;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-buttons a {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.header-buttons a:hover {
+    text-shadow: -4px -4px 2px rgba(255, 255, 255, 0.55), 0 0 1em rgb(255, 255, 255, 0.8), 0 0 0.2em rgb(255, 255, 255, 0.8);
+}
+
+.header-buttons a:active,
+.header-buttons a:visited {
+    background-color: rgb(49, 49, 49);
+    border-bottom: 1px solid yellow;
+    padding-bottom: 9px;
+    padding-top: 8px;
+}
+
+.p_logo {
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+.under-header {
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+#back {
+    float: right;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ Main ------------------------------ */
+/* ------------------------------------------------------------------ */
+
+#content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 8rem;
+    border: 4px inset white;
+    border-radius: 8px;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    background-image: linear-gradient(to top right, rgba(40, 60, 140), rgb(180, 10, 100));
+}
+
+#baseDiv{
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    color: rgb(200, 255, 0);
+    font-size: 9rem;
+    text-align: center;
+    text-shadow:
+        0.035em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        0 0.05em 0.025em rgba(0, 0, 255, 0.75);
+    font-family: Cyberjunkies;
+    letter-spacing: 0.7rem;
+}
+
+#text {
+    width: 100%;
+    margin-top: 3rem;
+    color: rgb(174, 0, 0);
+    text-shadow: 1px 1px 4px rgb(255, 43, 43), 0 0 1em rgb(255, 43, 43);
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    font-family: terminalFont;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ News ------------------------------ */
+/* ------------------------------------------------------------------ */
+
+.news {
+    width: 47.5%;
+    height: 45rem;
+    margin: 1%;
+    border: 3px inset white;
+    border-radius: 8px;
+    background-color: rgba(80, 80, 80, 0.85);
+    display: inline-block;
+}
+
+#newsTableContainer{
+    height: 37rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.news h1 {
+    margin-top: 1rem;
+    color: rgb(200, 255, 0);
+    font-size: 5.5rem;
+    text-align: center;
+    text-shadow:
+        0.035em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        0 0.05em 0.025em rgba(0, 0, 255, 0.75);
+    font-family: Cyberjunkies;
+    letter-spacing: 0.5rem;
+}
+
+.newsLabel {
+    font-family: terminalFont;
+    color: rgb(200, 255, 0);
+    font-size: 4rem;
+    padding-right: 30px;
+    text-shadow:
+        0.035em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        0 0.05em 0.025em rgba(0, 0, 255, 0.75);
+}
+
+#titleInput {
+    height: 50px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 38, 0);
+    font-size: 2rem;
+}
+
+#contentInput {
+    height: 300px;
+    resize: none;
+}
+
+#newsTitleChange {
+    height: 50px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: rgb(0, 90, 255);
+    font-size: 2rem;
+}
+
+#newsContentChange {
+    height: 300px;
+    resize: none;
+}
+
+#contentInput,
+#titleInput,
+#newsTitleChange,
+#newsContentChange,
+label {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#newsSubmit, #newsUpdate {
+    margin-left: auto;
+    margin-right: auto;
+    width: 14.5rem;
+    height: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: terminalFont;
+    color: rgb(255, 255, 255);
+    background-color: rgba(171, 255, 45, 1);
+    letter-spacing: 0.2em;
+    box-shadow: 2px 2px 2px rgb(171, 255, 45, 0.3);
+    outline: none;
+    border: none;
+    cursor: url(../imgs/cursor.png), auto;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    margin-top: 10px;
+}
+
+#newsSubmit{
+    left: 73%;
+}
+
+#newsUpdate{
+    left: 34%;
+}
+
+#newsBack{
+    position: absolute;
+    transform: translate(-50%, 0%);
+    margin-top: 1rem;
+    left: 18%;
+    color: rgb(0, 0, 255);
+    text-shadow: 0 0 1em rgb(0, 63, 188), 0 0 0.3em rgb(0, 187, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: terminalFont;
+    cursor: url(../imgs/pointer.png), default;
+}
+
+#newsList{
+    width: 38rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#newsList th, #newsList td{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    font-size: 90%;
+}
+
+#n_title, #n_uploader{
+    min-width: 8rem;
+    max-width: 8rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#n_content{
+    min-width: 15rem;
+    max-width: 15rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------ Helpdesk ------------------------------ */
+/* ---------------------------------------------------------------------- */
+
+#helpdeskSelect {
+    margin: 1rem;
+    width: 100px;
+    float: left;
+    height: 45rem;
+}
+
+#helpdeskList {
+    width: 100%;
+    margin: 1.5rem;
+    border: 3px solid rgb(107, 0, 0);
+    background-color: rgba(255, 35, 35, 0.6);
+    border-radius: 15px;
+}
+
+#helpdeskTableContainer{
+    margin-top: 0.8rem;
+    height: 42rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#h_select{
+    margin-top: 22rem;
+    height: 30px;
+    background-color: #ff29a6;
+    border: 2px solid #ff0033;
+}
+
+#helpdeskTable, th, td{
+    border: 1px solid black;
+    font-size: large;
+}
+
+#helpdeskTable th, #helpdeskTable td{
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+    background-color: rgba(0, 157, 255, 0.8);
+}
+
+td{
+    background-color: rgba(0, 209, 80, 0.8);
+}
+
+#helpdeskTable{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+}
+
+#h_id{
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+}
+
+#h_user{
+    min-width: 7rem;
+    max-width: 7rem;
+}
+
+#h_topic{
+    min-width: 16rem;
+    max-width: 16rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#h_email{
+    max-width: 15rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#h_content{
+    max-width: 33rem;
+    min-width: 33rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ------------------------------ Users --------------------------------- */
+/* ---------------------------------------------------------------------- */
+
+#usersSearchContainer{
+    margin: 1rem;
+    width: 12rem;
+    float: left;
+    height: 45rem;
+}
+
+#usersTableContainer{
+    margin-top: 0.8rem;
+    height: 42rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+#usersList{
+    width: 100%;
+    margin: 1.5rem;
+    border: 3px solid rgb(107, 0, 0);
+    background-color: rgba(255, 35, 35, 0.6);
+    border-radius: 15px;
+    float: right;
+}
+
+#usersSearchInput{
+    margin-top: 19rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    height: 2.2rem;
+    background-color: #ff29a6;
+    border: 2px solid #ff0033;
+    font-size: large;
+}
+
+#userSearchButton{
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.7rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: terminalFont;
+    color: rgb(255, 255, 255);
+    background-color: rgba(171, 255, 45, 1);
+    letter-spacing: 0.2em;
+    box-shadow: 2px 2px 2px rgb(171, 255, 45, 0.3);
+    outline: none;
+    border: none;
+    cursor: url(../imgs/cursor.png), auto;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    margin-top: 1rem;
+    left: 9.7%;
+}
+
+#usersTable{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+    font-size: large;
+    
+}
+
+#usersTable th, #usersTable td{
+    padding: 0.5rem;
+}
+
+#u_id{
+    min-width: 3rem;
+    max-width: 3rem;
+}
+
+#u_user{
+    min-width: 8rem;
+    max-width: 8rem;
+}
+
+#u_email{
+    min-width: 15rem;
+    max-width: 15rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#u_rank{
+    max-width: 7rem;
+    min-width: 7rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#u_regtime{
+    max-width: 7rem;
+    min-width: 7rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#u_switchRank{
+    max-width: 7rem;
+    min-width: 7rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+#u_switchSilent{
+    max-width: 7rem;
+    min-width: 7rem;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.emoji{
+    background-color: rgba(0, 209, 80, 0);
+    border: none;
+    font-size: 110%;
+}

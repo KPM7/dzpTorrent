@@ -1,0 +1,122 @@
+html{
+    background-image: url(../imgs/asdasdsad.png) !important;
+}
+
+.upload-container {
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin-top: 20rem;
+    padding: 2rem 0 2rem 0;
+}
+
+span{
+    color: yellow;
+    text-shadow: 2px 2px 0.4em rgb(255, 42, 5), 0 0 1.5em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+.upload-text {
+    margin: 2rem 0 2rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: terminalFont;
+    letter-spacing: 0.2rem;
+    color: yellow;
+}
+
+.upload-span{
+    letter-spacing: 0.5rem;
+    text-align: center;
+    font-family: terminalFont;
+    color: yellow;
+    text-shadow: 2px 2px 0.4em rgb(255, 42, 5), 0 0 1.5em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+.upload {
+    border: 3px inset white;
+    margin: 4.5rem;
+    padding: 3rem;
+    clip-path: polygon(5% 0, 95% 0, 100% 4%, 100% 96%, 95% 100%, 5% 100%, 0 96%, 0 4%); /* clip path da goat */
+}
+
+.upload a {
+    cursor: url(../imgs/pointer.png), default;
+    color: rgb(87, 172, 252);
+    text-shadow: 0 0 0.5em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: terminalFont;
+    letter-spacing: 0.2em;
+}
+
+.upload p {
+    text-shadow: 0 0 0.1em rgb(171, 255, 45), 0 0 0.1em rgb(171, 255, 45), 0 0 0.3em rgb(226, 255, 183);
+    font-family: terminalFont;
+    font-size: 2rem;
+    padding-left: 2rem;
+    letter-spacing: 0.1em;
+    margin: 0.8rem;
+}
+
+.uploadh2 {
+    text-align: center;
+    font-family: Cyberjunkies;
+    color: rgb(200, 255, 0);
+    font-size: 8rem;
+    letter-spacing: 0.55rem;
+    text-shadow: 
+    0.045em 0 0 rgba(255,0,0,0.75),
+    -0.035em -0.035em 0 rgba(0,255,0,0.75),
+    0 0.05em 0.025em rgba(0,0,255,0.75);
+    margin: 0;
+}
+
+.input-torrent::-webkit-file-upload-button,
+.input-torrent input {
+    visibility: hidden;
+    display: none;
+}
+
+.input-torrent, .torrent-dname, .torrent-category, .torrent-description {
+    padding: 0.5rem;
+    width: auto;
+    height: 1.3rem;
+    cursor: url(../imgs/pointer.png), pointer;
+    background-color: #b7b7b7;
+    color: black;
+    font-size: 1.2rem;
+    border: solid 1px yellow;
+    font-family: terminalFont;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+}
+
+.torrent-category{
+    width: auto;
+    height: 2.6rem;
+}
+
+.torrent-description{
+    width: auto;
+    height: auto;
+}
+
+.upload-btn {
+    width: 10rem;
+    height: 2.4rem;
+    font-size: 1.4rem;
+    font-family: terminalFont;
+    background-color: yellow;
+    border: none;
+    outline: none;
+    letter-spacing: 0.2em;
+    margin: auto;
+    display: block;
+    cursor: url(../imgs/pointer.png), pointer;
+}
+
+.checkbox{
+    margin-left: 3rem;
+    cursor: url(../imgs/pointer.png), pointer;
+}

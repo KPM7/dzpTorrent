@@ -1,0 +1,35 @@
+.footer {
+    width: 100%;
+    background-image: url(../imgs/saturatedbg1.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 12rem 0 6rem 0;
+    margin: 0;
+}
+
+.footer-content {
+    display: block;
+    width: auto;
+    padding: 2rem;
+    margin: 0 30rem 0 30rem;
+    background-color: black;
+    word-wrap: break-word;
+    font-family: terminalFont;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.rat{
+    width: 25%;
+    float: right;
+    height: auto;
+}
+
+.modve{
+    overflow: hidden;
+    width: 18%;
+    float: left;
+    height: auto;
+    transform: scaleX(-1);
+}

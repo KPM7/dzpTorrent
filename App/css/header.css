@@ -1,0 +1,397 @@
+html {
+    color: #FFF;
+    font-size: 16px;
+    cursor: url(../imgs/cursor.png), auto;
+    font-family: 'Tilt Neon', sans-serif;
+    width: 100%;
+    background-image: url(../imgs/background-main.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    padding-bottom: 500px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: rgb(37, 37, 37);
+}
+
+a {
+    cursor: url(../imgs/pointer.png), default;
+    color: inherit;
+    text-decoration: none;
+}
+
+/*Font importálás-----------------------------------------------*/
+@font-face {
+    font-family: terminalFont;
+    src: url(../fonts/Modeseven-L3n5.ttf);
+}
+
+@font-face {
+    font-family: neonCity;
+    src: url("../fonts/NeoncityDisplay-MVVLv.otf") format("opentype");
+}
+
+@font-face {
+    font-family: SYNNova;
+    src: url(../fonts/SYNNova-Bold.otf) format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Cyberspace;
+    src: url(../fonts/CyberspaceRacewayBack-9arj.ttf);
+}
+
+@font-face {
+    font-family: Cyberjunkies;
+    src: url(../fonts/Cyberjunkies\ Italic.ttf);
+}
+
+/*Header elemek-------------------------------------------------*/
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*50%;*/
+    ;
+    /*50%;*/
+    ;
+    height: 100%;
+    /*margin-left: 34.5rem;*/
+    /*margin-left: 34.5rem;*/
+    background: linear-gradient(50deg, transparent 50%, #ffffff 50%, #ffffff 60%, transparent 60%, transparent 63%, #ffffff 63%, #ffffff 70%, transparent 70%, transparent 73%, #ffffff 73%, #ffffff 77%, transparent 77%, transparent 80%, #ffffff 80%, #ffffff 83%, transparent 83%);
+}
+
+.header {
+    height: 2.5rem;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-size: 100%;
+    z-index: 3;
+    background-image: url(../imgs/black.jpg);
+    white-space: nowrap;
+}
+
+.header-buttons {
+    margin-top: 0.5rem;
+    font-family: SYNNova;
+    color: white;
+    font-size: larger;
+}
+
+.header-buttons a {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.header-buttons a:hover {
+    text-shadow: -4px -4px 2px rgba(255, 255, 255, 0.55), 0 0 1em rgb(255, 255, 255, 0.8), 0 0 0.2em rgb(255, 255, 255, 0.8);
+}
+
+.header-buttons a:active,
+.header-buttons a:visited {
+    background-color: rgb(49, 49, 49);
+    border-bottom: 1px solid yellow;
+    padding-bottom: 9px;
+    padding-top: 8px;
+}
+
+.header-button-right {
+    float: right;
+    padding-right: 0rem;
+}
+
+.header-button-right#session_user {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-marqueet {
+    background-color: black;
+    text-shadow: 1px 1px 0.2em rgb(255, 255, 255), 0 0 1em rgb(255, 255, 255);
+    font-family: terminalFont;
+    font-size: 80%;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}
+
+.header-span {
+    color: yellow;
+    text-shadow: 1px 1px 0.2em rgb(255, 42, 5), 0 0 1em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+.marqueet-text {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    animation: marquee-animation 23s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-170%);
+    }
+}
+
+.sep {
+    margin: 0 20px;
+}
+
+/* .marqueet-text:hover {
+    animation-play-state: paused;
+} */
+
+.p_logo {
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+.under-header {
+    margin-top: 10rem;
+    overflow: hidden;
+}
+
+/* CHAT ABLAK */
+
+.messageimage {
+    cursor: url(../imgs/pointer.png), default;
+}
+
+.chatbutton {
+    float: right;
+    position: relative;
+    z-index: -2;
+    margin-top: -2.1rem;
+}
+
+.showChatWindow {
+    left: 0;
+}
+
+.chatwindow {
+    margin-top: 10rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    z-index: 9;
+    width: auto;
+    max-width: 60rem;
+    height: auto;
+    left: -300%;
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.950);
+    transition: left 0.3s linear;
+}
+
+/*
+.chat-icon {
+    position: relative;
+    top: 1rem;
+    padding-left: 22rem;
+}
+*/
+
+#messages {
+    border: 1px solid white;
+    margin: 0rem 1.5rem 0.5rem 1.5rem;
+    width: auto;
+    height: 28.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatwindow h2 {
+    position: absolute;
+    top: -4rem;
+    padding-left: 3rem;
+    font-family: Cyberspace;
+    font-size: 4rem;
+    text-shadow:
+        0.035em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        0 0.05em 0.025em rgba(0, 0, 255, 0.75);
+    margin: 0;
+    color: rgb(200, 200, 200);
+}
+
+#chatInputDiv {
+    display: inline-flex;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+#white,
+#gray,
+#black {
+    width: 70px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 65%;
+    letter-spacing: 3px;
+    font-family: Cyberspace;
+    clip-path: polygon(14% 0%, 86% 0%, 100% 6%, 100% 94%, 86% 100%, 14% 100%, 0% 94%, 0% 6%);
+    border: 1px solid black;
+}
+
+#white {
+    background-color: white;
+}
+
+#gray {
+    background-color: gray;
+}
+
+#black {
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.white {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(100, 100, 100);
+}
+
+.gray {
+    background-color: rgba(140, 140, 140, 0.8);
+    color: rgb(15, 15, 15);
+}
+
+.black {
+    background-color: rgba(46, 46, 46, 0.8);
+    color: rgb(210, 210, 210);
+}
+
+.white #date {
+    color: rgb(72, 72, 72);
+    text-shadow: 1px 1px 0.2em rgba(200, 200, 200, 0.6), 0 0 0.2em rgba(200, 200, 200, 0.6);
+}
+
+.gray #date {
+    color: rgb(20, 20, 20);
+    text-shadow: 1px 1px 0.2em rgba(65, 65, 65, 0.6), 0 0 0.2em rgba(65, 65, 65, 0.6);
+}
+
+.black #date {
+    color: rgb(224, 224, 224);
+    text-shadow: 1px 1px 0.2em rgba(0, 0, 0, 0.6), 0 0 0.2em rgba(0, 0, 0, 0.6);
+}
+
+#buttons {
+    float: right;
+    display: block;
+    width: 250px;
+    height: 43px;
+    margin-top: 7px;
+}
+
+#chatInput {
+    background-color: rgb(144, 144, 144);
+    font-family: terminalFont;
+    font-size: 1.6rem;
+    color: white;
+    width: auto; 
+    min-width: 48.7rem;
+    margin-right: 0.5rem;
+}
+
+#chatSubmit {
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-family: Cyberspace;
+    background-color: rgb(200, 200, 200);
+    border-radius: 7px;
+    animation: mymove2 2000ms infinite;
+    animation-direction: alternate;
+    width: auto;
+    height: 3rem;
+    float: right;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 120%;
+    letter-spacing: 3px;
+    font-family: Cyberspace;
+    background-color: rgb(0, 180, 255);
+    border-radius: 7px;
+    animation: mymove2 2000ms infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mymove2 {
+    from {
+        background-color: rgb(0, 80, 255);
+    }
+
+    to {
+        background-color: rgb(0, 30, 255);
+    }
+
+    from {
+        background-color: rgb(0, 30, 255);
+    }
+
+    to {
+        background-color: rgb(0, 80, 255)
+    }
+}
+
+.messageBoxes {
+    font-family: terminalFont;
+    font-size: 1.5rem;
+    width: auto;
+    padding-left: 0.5rem;
+    word-wrap: break-word;
+}
+
+#messageData {
+    color: white;
+    display: inline-block;
+    margin: 0px;
+}
+
+#user {
+    color: yellow;
+    text-shadow: 1px 1px 0.2em rgb(255, 42, 5), 0 0 0.5em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+#date {
+    font-size: 0.7rem;
+    color: gray;
+    text-align: right;
+    display: inline-block;
+}

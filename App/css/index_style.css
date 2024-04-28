@@ -1,0 +1,140 @@
+.welcome-text {
+    position: absolute;
+    top: 18rem;
+    left: 20%;
+    z-index: 2;
+    margin: 0;
+    color: rgb(200, 255, 0);
+    font-size: 8rem;
+    text-align: center;
+    text-shadow:
+        0.055em 0 0 rgba(255, 0, 0, 0.85),
+        -0.045em -0.045em 0 rgba(0, 255, 0, 0.85),
+        0 0.15em 0.035em rgba(0, 0, 255, 0.85);
+    font-family: Cyberjunkies;
+    letter-spacing: 0.5rem;
+    -moz-transform: skew(18deg, -2deg);
+    -webkit-transform: skew(18deg, -2deg);
+    -o-transform: skew(18deg, -2deg);
+    -ms-transform: skew(18deg, -2deg);
+    transform: skew(18deg, -2deg);
+}
+
+/*Main content--------------------------------------------------*/
+.title-text {
+    font-family: Cyberjunkies;
+    color: rgb(0, 218, 98);
+    text-shadow: 0.30rem 0.30rem 0 rgba(0, 0, 0, 0.5), -0.30rem -0.30rem 0 rgba(0, 0, 0, 0.5), 0 0 8rem rgba(105, 168, 3, 0.85);
+    font-size: 7rem;
+    padding: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    margin: 3rem;
+}
+
+.hand {
+    float: right;
+    width: 32rem;
+    margin-right: 5rem;
+    transform: scaleX(-1);
+}
+
+.skull {
+    float: left;
+    width: 40rem;
+    transform: scaleX(-1);
+}
+
+.main span {
+    color: yellow;
+    text-shadow: 1px 1px 0.2em rgb(255, 42, 5), 0 0 1em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+.main {
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.main-inside,
+#news,
+.chatDiv {
+    border: 3px inset white;
+    margin: 4.5rem;
+    padding: 3rem;
+    clip-path: polygon(5% 0, 95% 0, 100% 4%, 100% 96%, 95% 100%, 5% 100%, 0 96%, 0 4%);
+    /* clip path da goat */
+}
+
+.main a {
+    cursor: url(../imgs/pointer.png), default;
+    color: rgb(87, 172, 252);
+    text-shadow: 0 0 0.5em rgb(0, 255, 255), 0 0 0.2em rgb(0, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: terminalFont;
+    letter-spacing: 0.2em;
+}
+
+.main span {
+    color: yellow;
+    text-shadow: 1px 1px 0.2em rgb(255, 42, 5), 0 0 1em rgb(255, 42, 5), 0 0 0.2em rgb(255, 42, 5);
+}
+
+.main .paragraph {
+    text-shadow: 0 0 0.1em rgb(171, 255, 45), 0 0 0.5em rgb(171, 255, 45), 0 0 0.3em rgb(226, 255, 183);
+    font-family: terminalFont;
+    font-size: 2.2rem;
+    padding-left: 3rem;
+    letter-spacing: 0.1em;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.main h2 {
+    font-family: Cyberspace;
+    font-size: 5rem;
+    text-align: left;
+    text-shadow:
+        0.035em 0 0 rgba(255, 0, 0, 0.75),
+        -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+        0 0.05em 0.025em rgba(0, 0, 255, 0.75);
+    margin: 0;
+    color: rgb(200, 200, 200);
+}
+
+/*Main content--------------------------------------------------*/
+
+
+.newsBoxes {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 3px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.newsDate {
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+    text-shadow:
+        0.05em 0 0 rgb(255, 0, 0),
+        0 0.07em 0.035em rgb(0, 0, 255);
+}
+
+.newsTitle {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 0.1em rgb(171, 255, 45), 0 0 1em rgb(171, 255, 45), 0 0 0.3em rgb(226, 255, 183);
+    margin: 1rem;
+    text-decoration: underline;
+}
+
+.newsContent {
+    font-size: 2rem;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

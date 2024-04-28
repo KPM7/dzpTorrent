@@ -1,0 +1,80 @@
+html{
+    background-image: url(../imgs/saturatedbg1.png) !important;
+}
+
+.banner{
+    padding-top: 5rem;
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.torrent-head h3{
+    font-family: SYNNova;
+    font-size: 6rem;
+    position: absolute;
+    top: 18rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.torrent-list{
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    overflow-x: auto;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+.table-name{
+    width: auto;
+    min-width: 50rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.table-date{
+    width: auto;
+    min-width: 10rem;
+}
+
+.table-size{
+    width: auto;
+    min-width: 5rem;
+}
+
+.table-category{
+    width: auto;
+    min-width: 8rem;
+}
+
+th{
+    width: 1.5rem;
+    margin: 0.2rem 0.5rem 0.2rem 0.5rem;
+    font-family: neonCity;
+    font-weight: lighter;
+}
+
+td{
+    border-top: 1px solid white;
+    font-family: 'Tilt Neon', sans-serif;
+    padding: 0.2rem;
+}
+
+.footer{
+    background-color: rgb(0, 0, 0);
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: 7.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
