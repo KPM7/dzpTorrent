@@ -1,0 +1,7 @@
+Test login info (admin):
+-Email: admin@gmail.com
+-Password: Admin123!
+
+Test login info (user):
+-Email: harrypot@gmail.com
+-Password: PotterHarry123!
